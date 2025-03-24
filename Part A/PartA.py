@@ -38,7 +38,6 @@ class Vehicle:
             self.colour = colour
 
 # Child class with attributes
-
 class Car(Vehicle):
 
     def __init__(self, name, year, max_speed, mileage, colour, num_doors, engine_type):
@@ -61,7 +60,7 @@ class Car(Vehicle):
 
 #  Create instances
 v1 = Vehicle("Motorbike", 2020, 180, 15000, "Red")
-c1 = Car("Sedan", 2022, 220, 12000, "Blue", 4, "Petrol")
+c1 = Car("BMW", 2022, 220, 12000, "Blue", 4, "Petrol")
 
 print("Initial Vehicle:")
 v1.print_attributes()
@@ -71,7 +70,7 @@ c1.print_attributes()
 v1.update_name("Scooter")
 v1.update_colour("Black")
 
-    # Update 2 attributes in Car
+# Update 2 attributes in Car
 c1.update_engine_type("Hybrid")
 c1.update_num_doors(2)
 
