@@ -37,7 +37,7 @@ class Vehicle:
         if isinstance(colour, str):
             self.colour = colour
 
-#Child class with attributes
+# Child class with attributes
 
 class Car(Vehicle):
 
@@ -54,12 +54,35 @@ class Car(Vehicle):
     def update_num_doors(self, num_doors):
         if isinstance(num_doors, int):
             self.num_doors = num_doors
-            
+
     def update_engine_type(self, engine_type):
         if isinstance(engine_type, str):
-            self.engine_type = engine_type            
+            self.engine_type = engine_type    
 
-                     
+#  Create instances
+v1 = Vehicle("Motorbike", 2020, 180, 15000, "Red")
+c1 = Car("Sedan", 2022, 220, 12000, "Blue", 4, "Petrol")
+
+print("Initial Vehicle:")
+v1.print_attributes()
+print("\nInitial Car:")
+c1.print_attributes()
+
+v1.update_name("Scooter")
+v1.update_colour("Black")
+
+    # Update 2 attributes in Car
+c1.update_engine_type("Hybrid")
+c1.update_num_doors(2)
+
+print("\nUpdated Vehicle:")
+v1.print_attributes()
+
+print("\nUpdated Car;")
+c1.print_attributes()
+
+
+    
 
 
         
